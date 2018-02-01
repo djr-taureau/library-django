@@ -1,7 +1,6 @@
-from django.contrib import admin
-
 # Register your models here.
-from catalog.models import Author, Genre, Book, BookInstance
+from catalog.models import Author, Book, BookInstance, Genre
+from django.contrib import admin
 
 #admin.site.register(Book)
 #admin.site.register(Author)
@@ -35,4 +34,3 @@ class BookInstanceAdmin(admin.ModelAdmin):
       'fields': ('status', 'due_back')
     })
   )
-
